@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 150px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color:#db0001 ;
+    color: white;
+    padding: 13px 30px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sign:hover{
+    background-color:#e2242a ;
+}
+.langbtn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 3px solid white;
+    padding: 13px 30px;
+}
+.langbtn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.title{
+    padding-top: 230px;
+    text-align: center;
+    line-height: 54px;
+}
+.title h1{
+    font-size: 56px;
+}
+.title h3{
+    font-size: 23px;
+}
+.email{
+    display: inline;
+}
+.email input{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color:#000;
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 20px;
+}
+.email button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color:#db0001;
+    color: white;
+    font-size: 20px;
+}
+.email button:hover{
+    background-color:#e2242a ;
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    
+}
+.textcolumn{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    
+}
+.textcolumn h2{
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+.textcolumn p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.imgcolumn{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.imgcolumn img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion p{
+    font-size: 23px;
+    font-weight: 500;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: inherit;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label +.content{
+    max-height: 600px;
+    padding: 30px;
+
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq{
+    font-size: 23px;
+}
+.faq small{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 3px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.footer .column{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .column a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding:10px 0;
+}
+.footer .langbtn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
